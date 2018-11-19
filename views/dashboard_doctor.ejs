@@ -6,7 +6,7 @@
 </div>
 
 <% if (meetings.current.length > 0) { %>
-<h3>Entrevista atual</h3>
+<h3>Disponibilidade</h3>
 <div class="column meeting-strip">
   <% for (var m of meetings.current) { %>
     <% if (m.booked) { %>
@@ -25,7 +25,7 @@
 <% } %>
 
 
-<h3>Disponibilidades</h3>
+<h3>Disponibilidades futuras</h3>
 
 <% if (meetings.upcoming.length > 0) { %>
   <div class="column meeting-strip">
