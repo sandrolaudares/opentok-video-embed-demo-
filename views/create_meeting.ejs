@@ -1,24 +1,24 @@
 <%- include('includes/header') %>
 
 <section>
-  <h2>Create meeting slot</h2>
+  <h2>Definir disponibilidade</h2>
 
-  <p>Meeting slots that you create here can be booked by patients.</p>
+  <p>:: Disponibilidades definidas aqui podem ser agendadas por colaboradores avaliados.</p>
 
   <form method="POST">
 
     <div>
-      <label for="field-start_date">Start date and time</label>
+      <label for="field-start_date">Inicio</label>
       <input id="field-start_date" type="date" class="start_date_input" autocomplete="off" name="start_date" maxlength="64" autofocus required>
     </div>
 
     <div>
-      <label for="field-duration">Duration (minutes)</label>
+      <label for="field-duration">Tempo entrevista (minutos)</label>
       <input id="field-duration" type="number" autocomplete="off" name="duration" maxlength="2" required value="15">
     </div>
 
     <div class="buttons">
-      <input type="submit" value="Create">
+      <input type="submit" value="Criar disponibilidade">
     </div>
 
   </form>
