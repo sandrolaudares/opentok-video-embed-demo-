@@ -1,13 +1,13 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><%= typeof title !== 'undefined' ? title : 'OpenTok embed appointment demo' %></title>
+    <title><%= typeof title !== 'undefined' ? title : 'Agendamento de Entrevistas' %></title>
     <% for (var a of assets.styles) { %>
     <link rel="stylesheet" type="text/css" href="/css/<%= a %>">
     <% } %>
@@ -15,13 +15,14 @@
 
 <body>
   <div class="container header">
-    <h1>OpenTok Embed Appointment Demo</h1>
+  <img src="https://www.kienbaum.com.br/home//themes/wc_agenciar3/images/logo-kienbaum.png" alt="Kienbaum">	
+    <h1>Agendamento de Entrevistas</h1>
     <% if (user) { %>
       <nav role="main">
         <ul class="row">
           <li><strong><%= user.role %></strong></li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/dashboard/<%= user.role.toLowerCase() %>">Dashboard</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/dashboard/<%= user.role.toLowerCase() %>">Painel</a></li>
         </ul>
       </nav>
     <% } %>
