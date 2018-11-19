@@ -6,7 +6,7 @@
 </div>
 
 <% if (meetings.current.length > 0) { %>
-<h3>Primeira entrevista</h3>
+<h3>Entrevista atual</h3>
 <div class="column meeting-strip">
   <% for (var m of meetings.current) { %>
     <% if (m.booked) { %>
@@ -25,7 +25,7 @@
 <% } %>
 
 
-<h3>Proximas entrevistas</h3>
+<h3>Disponibilidades</h3>
 
 <% if (meetings.upcoming.length > 0) { %>
   <div class="column meeting-strip">
@@ -33,12 +33,12 @@
       <% if (m.booked) { %>
         <div class="row meeting-item">
           <div class="meeting-item-time grow"><time><%= m.start_time %></time></div>
-          <div><span class="button disabled">Booked</span></div>
+          <div><span class="button disabled">Agendada</span></div>
         </div>
       <% } else { %>
         <div class="row meeting-item unclaimed">
           <div class="meeting-item-time grow"><time><%= m.start_time %><time></div>
-          <div><span class="button secondary disabled">Nao iniciada</span></div>
+          <div><span class="button secondary disabled">Sem agendamento</span></div>
         </div>
       <% } %>
     <% } %>
