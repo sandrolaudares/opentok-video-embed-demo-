@@ -15,12 +15,11 @@
 
 <body>
   <div class="container header">
-  <img src="https://www.kienbaum.com.br/home//themes/wc_agenciar3/images/logo-kienbaum.png" alt="Kienbaum">	
+  <img src="https://www.kienbaum.com.br/home//themes/wc_agenciar3/images/logo-kienbaum.png" align="right" alt="Kienbaum">	
     <h1>Agendamento de Entrevistas</h1>
     <% if (user) { %>
       <nav role="main">
         <ul class="row">
-          <li><strong><%= user.role %></strong></li>
           <li><a href="/">Inicio</a></li>
           <li><a href="/dashboard/<%= user.role.toLowerCase() %>">Painel</a></li>
         </ul>
