@@ -6,7 +6,7 @@
 </div>
 
 <% if (meetings.current.length > 0) { %>
-<h3>Current meeting</h3>
+<h3>Primeira entrevista</h3>
 <div class="column meeting-strip">
   <% for (var m of meetings.current) { %>
     <% if (m.booked) { %>
@@ -17,7 +17,7 @@
     <% } else { %>
       <div class="row meeting-item unclaimed">
         <div class="meeting-item-time grow"><time><%= m.start_time %></time></div>
-        <div><span class="button secondary disabled">Unclaimed</span></div>
+        <div><span class="button secondary disabled">Sem agendamento</span></div>
       </div>
     <% } %>
   <% } %>
@@ -46,7 +46,7 @@
 
 <% } else { %>
 
-  <p>Se voce nao possui entrevistas agendadas, voce pode <a href="/meetings/create">criar um agendamento</a>.</p>
+  <p>Voce nao possui entrevistas agendadas. <a href="/meetings/create">Agendamento</a>.</p>
 
 <% } %>
 
