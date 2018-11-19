@@ -5,7 +5,8 @@ let DB = {
   meetings: [],
 
   // Used to store embed code
-  embed_code: "<iframe src="https://tokbox.com/embed/embed/ot-embed.js?embedId=dbe900e7-5887-406f-bde0-360263e44299&room=DEFAULT_ROOM&iframe=true" width=600 height=400 allow="microphone; camera" ></iframe>"
+  embed_code: 
+  "<iframe src='https://tokbox.com/embed/embed/ot-embed.js?embedId=dbe900e7-5887-406f-bde0-360263e44299&room=DEFAULT_ROOM&iframe=true' width=600 height=400 allow='microphone; camera' ></iframe>"
 };
 
 let sort = m_list => {
