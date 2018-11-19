@@ -1,6 +1,6 @@
 <%- include('includes/header') %>
 
-<h2>Book meeting slots</h2>
+<h2>Disponibilidade de Agendamento</h2>
 
 <% for (var m of meetings) { %>
   <div class="row meeting-item">
@@ -8,7 +8,7 @@
     <div>
       <form method="POST">
         <input type="hidden" name="meeting_id" value="<%= m.id %>">
-        <input type="submit" value="Book">
+        <input type="submit" value="Agendar">
       </form>
     </div>
   </div>
